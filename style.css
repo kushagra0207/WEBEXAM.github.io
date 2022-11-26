@@ -4,41 +4,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-:root:has(#black:checked){
-    --rcolor:rgb(13, 13, 13);
-    --fcolor:rgb(146, 146, 246);
-    --bc:rgb(158, 148, 148);
-}
-#gray{
-    border: 4px solid gray;
-}
-#pink{
-    border: 4px solid pink;
-}
-#blue{
-    border: 4px solid blue;
-}
-#green{
-    border: 4px solid green;
-}
-#black{
-    border: 4px solid black;
-}
- body{
-    background-color: var(--rcolor);
- }
-
- .mov{
-    height: 200px;
-    width: 150px;
- }
 section{
     padding: 50px 150px;
 }
 main{
     border: 5px solid var(--bc);
     background-color: white;
-    
+    /* padding: 20px; */
 }
 h1{
     text-align: center;
@@ -47,8 +19,17 @@ h1{
     padding: 20px;
     color: var(--fcolor);
 }
+.moviess{
+    border: 5px solid rgb(177, 177, 177);
+    width: 800px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin: auto;
+}
 
-input[type="text"]{
+input[type="search"]{
     outline: none;
     height: 40px;
     padding: 5px;
@@ -109,3 +90,26 @@ input[type="radio"]:checked{
     --fcolor:rgb(1, 79, 1);
     --bc:rgb(117, 97, 97);
 }
+:root:has(#black:checked){
+    --rcolor:rgb(13, 13, 13);
+    --fcolor:rgb(146, 146, 246);
+    --bc:rgb(158, 148, 148);
+}
+#gray{
+    border: 3px solid gray;
+}
+#pink{
+    border: 3px solid pink;
+}
+#blue{
+    border: 3px solid blue;
+}
+#green{
+    border: 3px solid green;
+}
+#black{
+    border: 3px solid black;
+}
+ body{
+    background-color: var(--rcolor);
+ }
